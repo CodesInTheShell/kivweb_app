@@ -1,0 +1,14 @@
+{% extends 'philancerdb_app/base.html' %}
+{% load static %}
+
+{% block content %}
+	<div id="login_form2">
+  		<h2>Hi there freelancer!</h2>
+  		<p>Login to update your profile.</p>
+  		<form method="post">
+  		{% csrf_token %}
+    	{{ form.as_p }}
+    	<button type="submit">Login</button>
+  </form>
+  </div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'kivweb_app/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div id='resultContainer'>
+
+		<h2 id='resultLabel'>Results</h2>
+
+
+		{% for desc in iocDescriptions %}
+		<section id="resultSection">			
+			<p>{{desc}}</p>
+		</section>		
+		{% endfor %}
+	
+</div>
+
+<div>
+
+
+	
+</div>
+
+<!-- {{iocDescriptions}}
+
+again
+
+{{iocs}} -->
+
+<script src="{% static 'kivweb_app/js/jquery.min.js' %}" ></script>
+<script src="{% static 'kivweb_app/js/mycustom.js' %}" type="text/javascript"></script>
+{% endblock %}

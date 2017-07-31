@@ -1,0 +1,43 @@
+{% extends 'kivweb_app/base.html' %}
+{% load static %}
+
+{% block content %}
+
+	<div id="aboutContainer">
+		
+		About This Site
+		<br>
+		<br>
+		<br>
+		This site can be use to fetch threat intelligence data from a taxii server.<br>
+		<br>
+        TAXII - Trusted Automated eXchange of Indicator Information. A free and open transport mechanism that standardizes
+        the automated exchange of cyber threat information.<br>
+        <br>        
+        STIX - Structured Threat Information Expression. is a language for describing cyber threat information
+        in a standardized and structured manner to enable the exchange of cyber threat intelligence (CTI).<br>
+        <br>
+        Indicator – contains a pattern that can be used to detect suspicious or malicious cyber activity.<br>
+        <br>
+        <br>
+        <br>        
+        References and more information can be found on the following:<br>
+        <br>
+        https://www.oasis-open.org/
+        <br>
+        https://oasis-open.github.io/cti-documentation/<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        Disclaimer:<br>
+        The author of this site is not responsible for the client's use of this site's functionality.<br>
+        <br>
+        <br>
+        <br>
+        		
+	</div> <!--container-->
+	
+	<script src="{% static 'kivweb_app/js/jquery.min.js' %}" ></script>
+	<script src="{% static 'kivweb_app/js/mycustom.js' %}" type="text/javascript"></script>
+{% endblock %}

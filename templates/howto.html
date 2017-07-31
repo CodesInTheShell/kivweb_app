@@ -1,0 +1,48 @@
+{% extends 'kivweb_app/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div id='howtoContainer'>
+
+        How to use this site
+        <br>
+        <br>
+		This site was is tested to fetch data from hailataxii.<br>
+		<br>
+        Discovery URL: http://hailataxii.com/taxii-discovery-service
+        <br>
+        <br>
+        Username: guest
+        <br>
+        Password: guest
+        <br>
+        <br>
+        Available feeds:<br>
+        <br>
+            guest.Abuse_ch<br>
+            guest.CyberCrime_Tracker<br>
+            guest.EmergingThreats_rules<br>
+            guest.Lehigh_edu<br>
+            guest.MalwareDomainList_Hostlist<br>
+            guest.blutmagie_de_torExits<br>
+            guest.dataForLast_7daysOnly<br>
+            guest.dshield_BlockList<br>
+            guest.phishtank_com<br>
+        <br>
+        More information can be found on there website.<br>
+        <br>
+        NOTES:<br>
+        <br>
+        When receiving a chunk size error on your request, maybe it is due to a large volume of data. <br>
+        You may need to shorten the from and to stamp. A length of more that two days can give you a huge amount of result that may cause connection lost.<br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+</div>
+
+<script src="{% static 'kivweb_app/js/jquery.min.js' %}" ></script>
+<script src="{% static 'kivweb_app/js/mycustom.js' %}" type="text/javascript"></script>
+{% endblock %}

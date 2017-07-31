@@ -1,0 +1,21 @@
+{% extends 'kivweb_app/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div id='resultContainer'>
+	Results. reuse
+</div>
+
+<div>
+	<section>
+	{%for indicator in indicators%}	
+	<h1>{{indicator.Title.string}}</h1>
+	<p>{{indicator.Description.string}}</p>
+	</section>
+	{% endfor %}
+</div>
+
+<script src="{% static 'kivweb_app/js/jquery.min.js' %}" ></script>
+<script src="{% static 'kivweb_app/js/mycustom.js' %}" type="text/javascript"></script>
+{% endblock %}
